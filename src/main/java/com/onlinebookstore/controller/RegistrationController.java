@@ -16,7 +16,6 @@ public class RegistrationController {
 	@Autowired
 	private BooksService booksService;
 	
-
 	@PostMapping("/register")
 	public ResponseEntity<Book>  createReg(@RequestBody Book book){
 		Book registartion = booksService.createRegistartion(book);
